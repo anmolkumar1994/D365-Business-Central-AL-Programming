@@ -2,14 +2,14 @@ page 50102 "Employeee list"
 {
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = Employeee;
 
     layout
     {
         area(Content)
         {
-            group("Basic Info")
+            repeater("Basic Info")
             {
                 field("Employee No"; Rec."Employee No")
                 {
